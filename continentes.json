@@ -1,0 +1,122 @@
+{
+    "continentes": [
+      {
+        "nombre": "Africa",
+        "definicion": "África es el segundo continente más grande en términos de superficie y población. Es conocido por su diversidad cultural, lingüística y geográfica.",
+        "superficie_km2": 30370000,
+        "poblacion": 1340598000,
+        "numero_paises": 54,
+        "idiomas": ["Árabe", "Inglés", "Francés", "Swahili"],
+        "caracteristicas": [
+          "Desiertos como el Sahara",
+          "Selvas tropicales en el Congo",
+          "Grandes sabanas y llanuras"
+        ],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Map_of_Africa_with_Countries.svg/1000px-Map_of_Africa_with_Countries.svg.png",
+        "paises": [
+          "Nigeria", "Egipto", "Sudáfrica", "Etiopía", "Kenia"
+        ]
+      },
+      {
+        "nombre": "Asia",
+        "definicion": "Asia es el continente más grande y poblado del mundo. Alberga una gran diversidad de culturas, religiones y paisajes, desde el desierto de Arabia hasta las selvas del sudeste asiático.",
+        "superficie_km2": 44579000,
+        "poblacion": 4641054775,
+        "numero_paises": 49,
+        "idiomas": ["Mandarín", "Hindi", "Árabe", "Ruso"],
+        "caracteristicas": [
+          "Himalayas, la montaña más alta del mundo",
+          "Desiertos como el Gobi",
+          "Bosques tropicales"
+        ],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Asia_in_world_map.svg/1200px-Asia_in_world_map.svg.png",
+        "paises": [
+          "China", "India", "Japón", "Rusia", "Corea del Sur"
+        ]
+      },
+      {
+        "nombre": "Europa",
+        "definicion": "Europa es un continente que se distingue por su rica historia, sus monumentos arquitectónicos y su gran influencia en la cultura mundial.",
+        "superficie_km2": 10180000,
+        "poblacion": 746419440,
+        "numero_paises": 44,
+        "idiomas": ["Inglés", "Español", "Francés", "Alemán", "Ruso"],
+        "caracteristicas": [
+          "Montañas como los Alpes",
+          "Llanuras en Europa del Este",
+          "Ciudades históricas como Roma, París y Londres"
+        ],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Europe-blank-map.svg/800px-Europe-blank-map.svg.png",
+        "paises": [
+          "Francia", "Alemania", "Italia", "España", "Reino Unido"
+        ]
+      },
+      {
+        "nombre": "Norteamérica",
+        "definicion": "Norteamérica es un continente que incluye grandes países como Estados Unidos, Canadá y México, y una gran diversidad geográfica y cultural.",
+        "superficie_km2": 24709000,
+        "poblacion": 579024000,
+        "numero_paises": 23,
+        "idiomas": ["Inglés", "Español", "Francés"],
+        "caracteristicas": [
+          "Montañas Rocosas",
+          "Desiertos como el Sonora",
+          "Grandes lagos como el Lago de los Grandes Lagos"
+        ],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Map_of_North_America.svg/1024px-Map_of_North_America.svg.png",
+        "paises": [
+          "Estados Unidos", "Canadá", "México", "Guatemala", "Cuba"
+        ]
+      },
+      {
+        "nombre": "Suramérica",
+        "definicion": "Suramérica es un continente conocido por su diversidad ecológica, su cultura indígena y la influencia europea. Alberga la Amazonía, la selva más grande del mundo.",
+        "superficie_km2": 17840000,
+        "poblacion": 430759766,
+        "numero_paises": 12,
+        "idiomas": ["Español", "Portugués"],
+        "caracteristicas": [
+          "Selva Amazónica",
+          "Andes, la cadena montañosa más larga del mundo",
+          "El río Amazonas"
+        ],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/South_America_map.svg/800px-South_America_map.svg.png",
+        "paises": [
+          "Brasil", "Argentina", "Colombia", "Chile", "Perú"
+        ]
+      },
+      {
+        "nombre": "Oceanía",
+        "definicion": "Oceanía es el continente que abarca Australia, Nueva Zelanda, y miles de islas del Pacífico. Es conocido por su biodiversidad única y su clima tropical.",
+        "superficie_km2": 9000000,
+        "poblacion": 4105267,
+        "numero_paises": 14,
+        "idiomas": ["Inglés", "Maorí", "Tok Pisin"],
+        "caracteristicas": [
+          "Gran Barrera de Coral",
+          "Islas volcánicas",
+          "Desiertos de Australia"
+        ],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Oceania_map_2.svg/800px-Oceania_map_2.svg.png",
+        "paises": [
+          "Australia", "Nueva Zelanda", "Papúa Nueva Guinea", "Fiyi", "Islas Salomón"
+        ]
+      },
+      {
+        "nombre": "Antártida",
+        "definicion": "La Antártida es un continente frío y deshabitado, cubierto casi en su totalidad por hielo. Es el continente más austral del planeta.",
+        "superficie_km2": 14000000,
+        "poblacion": 1106,
+        "numero_paises": 0,
+        "idiomas": ["No tiene población establecida"],
+        "caracteristicas": [
+          "Capa de hielo más grande del mundo",
+          "No tiene gobiernos permanentes",
+          "Estaciones de investigación científica"
+        ],
+        "imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Antarctica_in_August_2020.svg",
+        "paises": []
+      }
+    ]
+  }
+  
