@@ -215,7 +215,6 @@ header {
 }
 
 .continente:hover .image-opacity{
-    
     opacity: .4;
     transition: .3s all ease-in-out;
 }

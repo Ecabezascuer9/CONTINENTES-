@@ -9,7 +9,7 @@ fetch('./continentes.json')
         datos.continentes.forEach((continente, index) => {
             if (divsContinentes[index]) {
                 divsContinentes[index].innerHTML = `
-        <img class="image-opacity" src="${continente.imagen}" alt="${continente.nombre}" style="width: 100%; height: 250px; object-fit:cover;">
+        <img class="image-opacity" src="${continente.imagen}" alt="${continente.nombre}" style="width: 100%; height: 250px; object-fit:cover">
         <div class="contain-component">
         <section class="container-titulo-component">
           <h2 class="titulo">${continente.nombre}</h2>
