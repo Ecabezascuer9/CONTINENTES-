@@ -19,22 +19,51 @@ fetch('./continentes.json')
           </section>
           </div>
           <div class="contain-cm-button">
-          <button class="button-cm">Consulta más</button>
+          <button class="button-cm" data-index="${index}">Consulta más</button>
           </div>
         `;
             }
         });
+
+        // JavaScript para la creacion del popup -->
+        const botones = document.querySelectorAll('.button-cm');
+        botones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                const index = boton.getAttribute('data-index');
+                mostrarPopup(datos.continentes[index]);
+            });
+        });
     })
+
     .catch(error => console.error('Error cargando JSON:', error));
 
+const popupOverlay = document.getElementById('popup-overlay');
+const popupContent = document.getElementById('popup-info');
+const closePopup = document.getElementById('close-popup');
 
-// Información que a futuro utilizaremos para mapear datos -->
+function mostrarPopup(continente) {
+    popupContent.innerHTML = `
+        <h2>${continente.nombre}</h2>
+        <p><strong>Superficie:</strong> ${continente.superficie_km2.toLocaleString()} km²</p>
+        <p><strong>Población:</strong> ${continente.poblacion.toLocaleString()}</p>
+        <p><strong>Número de países:</strong> ${continente.numero_paises}</p>
+        <p><strong>Idiomas principales:</strong> ${continente.idiomas.join(', ')}</p>
+        <p><strong>Características:</strong></p>
+        // Base -->
+        <img class="style-image-second" src=${continente.imagen} alt=${continente.nombre}>;
+        <ul>
+            ${continente.caracteristicas.map(c => `<li>${c}</li>`).join('')}
+        </ul>
+    `;
+    popupOverlay.style.display = 'flex';
+}
 
-//   <p><strong>Superficie:</strong> ${continente.superficie_km2.toLocaleString()} km²</p>
-//           <p><strong>Población:</strong> ${continente.poblacion.toLocaleString()}</p>
-//           <p><strong>Número de países:</strong> ${continente.numero_paises}</p>
-//           <p><strong>Idiomas principales:</strong> ${continente.idiomas.join(', ')}</p>
-//           <p><strong>Características:</strong></p>
-//           <ul>
-//             ${continente.caracteristicas.map(c => `<li>${c}</li>`).join('')}
-//           </ul>
+closePopup.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+});
+
+popupOverlay.addEventListener('click', (e) => {
+    if (e.target === popupOverlay) {
+        popupOverlay.style.display = 'none';
+    }
+});
